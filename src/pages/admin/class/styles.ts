@@ -19,3 +19,7 @@ export const Content = styled.div`
     background-color: transparent;
 }
 `;
+
+export const Container = styled.div`
+color: #f1f1f1;
+`;

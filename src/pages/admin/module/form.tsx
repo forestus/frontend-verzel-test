@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { createRequest, updateRequest } from './../../../store/modules/module/actions';
 import { FormHandles } from '@unform/core';
-
+import {Container} from "./styles"
 import { Input } from 'components/Input';
 import { useCallback, useEffect, useRef } from 'react';
 
@@ -54,7 +54,9 @@ export default function FormClass({ entity, type }: FormClassProps) {
   return (
     <div className="content">
       <Form ref={formRef} onSubmit={handleSubmit}>
-        <Input name="name" type="text" label="Nome" />
+        <Container>
+        <Input className="input" name="name" type="text" label="Nome" />
+        </Container>
 
         <button type="submit" className="btn">
           {entity ? 'Atualizar' : 'Adicionar'}

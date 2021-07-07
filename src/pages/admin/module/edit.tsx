@@ -4,7 +4,6 @@ import { useGetData} from 'use-axios-react'
 import { useParams } from "react-router";
 import { Module, ParamsProps } from "types";
 import { toast } from "react-toastify";
-import { Redirect } from "react-router-dom";
 import history from "services/history";
 
 export default function EditModuleAdm(){

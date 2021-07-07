@@ -3,7 +3,7 @@ import { Form } from '@unform/web';
 import getValidationErrors from 'utils/getValidationErrors';
 import { useDispatch } from "react-redux";
 import * as Yup from "yup";
-
+import {Container} from "./styles"
 import { FormHandles } from "@unform/core";
 
 import { Input } from 'components/Input';
@@ -64,7 +64,9 @@ export default function FormClass({entity, id_module,type} : FormClassProps){
   )
   const formRef = useRef<FormHandles>(null);
   return(<div className="content"><Form ref={formRef} onSubmit={handleSubmit}>
+    <Container>
           <Input name="name" type="text" label="Nome" />
+    </Container>
           <DatePicker name="exhibition" label="Horário" />
       <button type="submit" className="btn">Adicionar</button>
       {loading ? <p>Aguarde...</p> : ''}

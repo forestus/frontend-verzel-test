@@ -63,7 +63,7 @@ dispatch(reloadData(!reload))
           </table>
         ) : (
           <h4 style={{color: "#f1f1f1"}}>Nenhum item disponível!</h4>
-        )}
+          )}
       </div>
     </>
   );

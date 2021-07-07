@@ -27,6 +27,7 @@ export const GlobalStyle  =createGlobalStyle`
     min-height: 100vh;
     
   }
+ 
   button{
     cursor: pointer;
   }
@@ -54,6 +55,7 @@ export const GlobalStyle  =createGlobalStyle`
     padding: 0 1.5rem;
     height: 2.75rem;
     font-size: 1rem;
+    
   }
 .content{
 padding-top: 2rem;
@@ -84,6 +86,7 @@ td, .content table th {
     flex-direction: row-reverse
 }
 
+
 tr:nth-child(even){background-color: #f2f2f2;}
 tr:nth-child(3){
   background-color: #f2f2f2;
@@ -99,5 +102,23 @@ th {
   color: white;
 }
 }
-
+.input{
+  width: 20% !important;
+  color: #f1f1f1;
+}
+.checkbox{
+  width: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+  
+}
+.boxcheckbox h4{
+  margin-right: 1rem;
+  color: #f1f1f1;
+}
+.boxcheckbox{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
 `;

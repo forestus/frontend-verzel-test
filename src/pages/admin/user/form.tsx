@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { createRequest, updateRequest } from './../../../store/modules/user/actions';
 import { FormHandles } from '@unform/core';
-
+import {Container} from "./styles"
 import { Input } from 'components/Input';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { CheckBox } from 'components/Checkbox';
@@ -77,14 +77,17 @@ export default function FormClass({ user, type }: FormClassProps) {
   return (
     <div className="content">
       <Form ref={formRef} onSubmit={handleSubmit}>
-        <Input name="name" type="text" label="Nome" />
-         <Input name="id" type="number" hidden label="" />
-          <Input name="email" type="mail" label="E-mail" />
-          <Input name="password" type="password" label="Password" />
-          <Input name="confirmPassword" type="confirmPassword" label="Confirm Password" />
-          <CheckBox checked={userUpdated?.master} onChange={()=>setUserUpdated({...userUpdated, master: !userUpdated?.master} as UserCreateEdit)} name="master" />
-
-
+        <Container> 
+        <Input className="input" name="name" type="text" label="Nome" />
+         <Input className="input" name="id" type="number" hidden label="" />
+          <Input className="input" name="email" type="mail" label="E-mail" />
+          <Input className="input" name="password" type="password" label="Password" />
+          <Input className="input" name="confirmPassword" type="confirmPassword" label="Confirm Password" />
+        </Container>
+          <div className="boxcheckbox">
+          <h4>Admin: </h4>
+          <CheckBox className="checkbox" checked={userUpdated?.master} onChange={()=>setUserUpdated({...userUpdated, master: !userUpdated?.master} as UserCreateEdit)} name="master"/>
+          </div>
         <button type="submit" className="btn">
           {user ? 'Atualizar' : 'Adicionar'}
         </button>
