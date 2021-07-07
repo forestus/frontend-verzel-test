@@ -82,7 +82,7 @@ export default function FormClass({ user, type }: FormClassProps) {
          <Input className="input" name="id" type="number" hidden label="" />
           <Input className="input" name="email" type="mail" label="E-mail" />
           <Input className="input" name="password" type="password" label="Password" />
-          <Input className="input" name="confirmPassword" type="confirmPassword" label="Confirm Password" />
+          <Input className="input" name="confirmPassword" type="password" label="Confirm Password" />
         </Container>
           <div className="boxcheckbox">
           <h4>Admin: </h4>

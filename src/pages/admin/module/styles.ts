@@ -8,5 +8,7 @@ color: #f1f1f1;
 `;
 
 export const Container = styled.div`
+label{
 color: #f1f1f1;
+}
 `;

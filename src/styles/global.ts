@@ -104,7 +104,6 @@ th {
 }
 .input{
   width: 20% !important;
-  color: #f1f1f1;
 }
 .checkbox{
   width: 1rem !important;

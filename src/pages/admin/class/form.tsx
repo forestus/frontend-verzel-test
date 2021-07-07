@@ -65,9 +65,9 @@ export default function FormClass({entity, id_module,type} : FormClassProps){
   const formRef = useRef<FormHandles>(null);
   return(<div className="content"><Form ref={formRef} onSubmit={handleSubmit}>
     <Container>
-          <Input name="name" type="text" label="Nome" />
+          <Input className="input" name="name" type="text" label="Nome" />
+          <DatePicker className="input" name="exhibition" label="Horário" />
     </Container>
-          <DatePicker name="exhibition" label="Horário" />
       <button type="submit" className="btn">Adicionar</button>
       {loading ? <p>Aguarde...</p> : ''}
     </Form></div>)

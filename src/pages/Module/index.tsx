@@ -14,8 +14,10 @@ const modules: Module[] = data;
         ) : modules?.length > 0 ? (
               <>{modules.map((item, index) => {
                 return (<div className="module" key={index}>
+                  
                     <p>{item.name}</p>
-                    <Link to={`/${item.id}/aulas`}>Aulas</Link>
+                    <p>aulas: {item.length}</p>
+                    <Link to={`/${item.id}/aulas`}>Exibir</Link>
                 </div>);
               })}</>
             

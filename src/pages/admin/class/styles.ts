@@ -13,13 +13,10 @@ export const Content = styled.div`
     box-sizing: border-box;
     border: 1px solid blue;
 }
-
-.content table *{
-    background: transparent;
-    background-color: transparent;
-}
 `;
 
 export const Container = styled.div`
+label{
 color: #f1f1f1;
+}
 `;

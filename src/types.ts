@@ -19,6 +19,7 @@ export interface Module {
   id?: number;
   name: string;
   classes?: Class[];
+  length?: number;
 }
 
 export interface ParamsProps {
