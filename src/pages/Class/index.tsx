@@ -3,6 +3,7 @@ import {Container, ContainerItem} from './styles';
 import { Class, Module} from './../../types'
 import {   Link, useParams} from 'react-router-dom';
 import Moment from 'react-moment';
+import { MdArrowBack } from 'react-icons/md';
 interface ParamsProps{
 id:string
 }
@@ -16,7 +17,7 @@ return (<>
  
  
  <span style={{display: 'flex', alignItems: 'baseline'}}><Link style={{ fontSize:'2rem' ,
-    color: 'white', textDecoration: 'none'}} to={`/`}>Voltar</Link><h1 className="title">Aulas</h1> </span>
+    color: 'white', textDecoration: 'none'}} to={`/`}><MdArrowBack/></Link><h1 className="title">Aulas</h1> </span>
     <Container>
       {loading ? (
           <span>Carregando...</span>

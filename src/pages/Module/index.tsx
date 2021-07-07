@@ -7,7 +7,7 @@ const [data, loading] = useGetData("/modules");
 const modules: Module[] = data;
   return (<>
   
-  <h1 className="title">Modulos</h1>
+  <h1 className="title">Módulos</h1>
     <Container>
       {loading ? (
           <span>Carregando...</span>
